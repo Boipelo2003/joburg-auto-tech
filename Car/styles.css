@@ -1,0 +1,117 @@
+:root {
+    --brand-red: #c8102e;
+    --brand-dark: #0a0a0a;
+    --brand-accent: #ff2d2d;
+  }
+  * { font-family: 'Inter', sans-serif; }
+  h1, h2, h3, h4, .display-font { font-family: 'Montserrat', sans-serif; }
+  
+  html { scroll-behavior: smooth; }
+  body { background: #0a0a0a; color: #f5f5f5; overflow-x: hidden; }
+  
+  .gradient-text {
+    background: linear-gradient(135deg, #ffffff 0%, #ff4444 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+  
+  .hero-overlay {
+    background: linear-gradient(135deg, rgba(10,10,10,0.92) 0%, rgba(10,10,10,0.7) 50%, rgba(200,16,46,0.3) 100%);
+  }
+  
+  .card-hover {
+    transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  }
+  .card-hover:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 20px 40px rgba(200, 16, 46, 0.3);
+  }
+  
+  .red-line {
+    height: 3px;
+    background: linear-gradient(90deg, transparent, #c8102e, transparent);
+  }
+  
+  .nav-blur {
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    background: rgba(10, 10, 10, 0.85);
+  }
+  
+  .service-icon {
+    background: linear-gradient(135deg, #c8102e 0%, #8b0a1f 100%);
+  }
+  
+  .pulse-dot {
+    animation: pulse 2s infinite;
+  }
+  @keyframes pulse {
+    0%, 100% { opacity: 1; transform: scale(1); }
+    50% { opacity: 0.5; transform: scale(1.1); }
+  }
+  
+  .fade-in {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: all 0.8s ease-out;
+  }
+  .fade-in.visible {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  
+  .map-container {
+    border: 2px solid #c8102e;
+    border-radius: 16px;
+    overflow: hidden;
+    box-shadow: 0 0 40px rgba(200, 16, 46, 0.2);
+  }
+  
+  .btn-primary {
+    background: linear-gradient(135deg, #c8102e 0%, #8b0a1f 100%);
+    transition: all 0.3s ease;
+  }
+  .btn-primary:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 10px 30px rgba(200, 16, 46, 0.5);
+  }
+  
+  .btn-outline {
+    border: 2px solid #c8102e;
+    transition: all 0.3s ease;
+  }
+  .btn-outline:hover {
+    background: #c8102e;
+    transform: translateY(-2px);
+  }
+  
+  .stat-number {
+    background: linear-gradient(135deg, #ffffff 0%, #ff4444 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+  
+  .payment-badge {
+    background: #1a1a1a;
+    border: 1px solid #333;
+    transition: all 0.3s ease;
+  }
+  .payment-badge:hover {
+    border-color: #c8102e;
+    transform: scale(1.05);
+  }
+  
+  .marquee {
+    animation: marquee 30s linear infinite;
+  }
+  @keyframes marquee {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(-50%); }
+  }
+  
+  ::-webkit-scrollbar { width: 10px; }
+  ::-webkit-scrollbar-track { background: #0a0a0a; }
+  ::-webkit-scrollbar-thumb { background: #c8102e; border-radius: 5px; }
+  ::-webkit-scrollbar-thumb:hover { background: #ff2d2d; }
